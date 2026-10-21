@@ -3,8 +3,9 @@ import { Cpu, Database, ExternalLink, Info, Monitor, Server, ShieldAlert, Target
 // EDIT 1: your name and course line
 const DEVELOPER_NAME = "Your Name";
 const DEVELOPER_ROLE = "B.Tech Computer Science student, AI/ML specialization";
+
 // EDIT 2: your GitHub repository (create it later; leave empty until then)
-const GITHUB_URL = "";
+const GITHUB_URL = "https://github.com/ChandraNarayanPanda/breast-cancer-classifier";
  
 const FACTS = [
   ["569", "patient samples"],
