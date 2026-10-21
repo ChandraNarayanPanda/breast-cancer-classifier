@@ -1,7 +1,7 @@
 import { Cpu, Database, ExternalLink, Info, Monitor, Server, ShieldAlert, Target } from "lucide-react";
  
 // EDIT 1: your name and course line
-const DEVELOPER_NAME = "Your Name";
+const DEVELOPER_NAME = "Chandra Narayan Panda";
 const DEVELOPER_ROLE = "B.Tech Computer Science student, AI/ML specialization";
 
 // EDIT 2: your GitHub repository (create it later; leave empty until then)
