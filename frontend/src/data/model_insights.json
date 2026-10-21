@@ -1,0 +1,284 @@
+{
+  "final_model": "Logistic Regression",
+  "dataset": {
+    "name": "Wisconsin Diagnostic Breast Cancer (via scikit-learn)",
+    "n_total": 569,
+    "n_train": 455,
+    "n_test": 114,
+    "test_malignant": 42,
+    "test_benign": 72
+  },
+  "procedure": "Models were tuned with 5-fold stratified cross-validation on the training set only. The 114-row test set was used once to report the test metrics. Malignant is treated as the positive class for precision, recall and F1.",
+  "models": [
+    {
+      "name": "Logistic Regression",
+      "test": {
+        "accuracy": 0.9737,
+        "precision": 0.9756,
+        "recall": 0.9524,
+        "f1": 0.9639,
+        "roc_auc": 0.9957
+      },
+      "cv": {
+        "accuracy": 0.9824,
+        "recall": 0.9588,
+        "f1": 0.976,
+        "roc_auc": 0.9951
+      },
+      "confusion_matrix": [
+        [
+          40,
+          2
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0139
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.8611
+        },
+        {
+          "fpr": 0.0238,
+          "tpr": 0.8611
+        },
+        {
+          "fpr": 0.0238,
+          "tpr": 0.9861
+        },
+        {
+          "fpr": 0.0952,
+          "tpr": 0.9861
+        },
+        {
+          "fpr": 0.0952,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    },
+    {
+      "name": "SVM (RBF)",
+      "test": {
+        "accuracy": 0.9825,
+        "precision": 0.9762,
+        "recall": 0.9762,
+        "f1": 0.9762,
+        "roc_auc": 0.9977
+      },
+      "cv": {
+        "accuracy": 0.9758,
+        "recall": 0.9529,
+        "f1": 0.9668,
+        "roc_auc": 0.9964
+      },
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0139
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9028
+        },
+        {
+          "fpr": 0.0238,
+          "tpr": 0.9028
+        },
+        {
+          "fpr": 0.0238,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Random Forest",
+      "test": {
+        "accuracy": 0.9561,
+        "precision": 0.9512,
+        "recall": 0.9286,
+        "f1": 0.9398,
+        "roc_auc": 0.9932
+      },
+      "cv": {
+        "accuracy": 0.9626,
+        "recall": 0.9529,
+        "f1": 0.9503,
+        "roc_auc": 0.9894
+      },
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          2,
+          70
+        ]
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.25
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.375
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.4444
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.5417
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.625
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.6389
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.6806
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9028
+        },
+        {
+          "fpr": 0.0476,
+          "tpr": 0.9028
+        },
+        {
+          "fpr": 0.0476,
+          "tpr": 0.9306
+        },
+        {
+          "fpr": 0.0714,
+          "tpr": 0.9444
+        },
+        {
+          "fpr": 0.0714,
+          "tpr": 0.9861
+        },
+        {
+          "fpr": 0.119,
+          "tpr": 0.9861
+        },
+        {
+          "fpr": 0.119,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2381,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2857,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3333,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.4286,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5476,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6429,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "worst texture",
+      "toward_malignant": 0.5635
+    },
+    {
+      "feature": "worst radius",
+      "toward_malignant": 0.509
+    },
+    {
+      "feature": "worst concave points",
+      "toward_malignant": 0.5078
+    },
+    {
+      "feature": "worst perimeter",
+      "toward_malignant": 0.4655
+    },
+    {
+      "feature": "worst area",
+      "toward_malignant": 0.4603
+    },
+    {
+      "feature": "mean texture",
+      "toward_malignant": 0.4398
+    },
+    {
+      "feature": "radius error",
+      "toward_malignant": 0.4391
+    },
+    {
+      "feature": "worst symmetry",
+      "toward_malignant": 0.4128
+    },
+    {
+      "feature": "mean concave points",
+      "toward_malignant": 0.4039
+    },
+    {
+      "feature": "mean radius",
+      "toward_malignant": 0.3973
+    }
+  ]
+}
